@@ -15,6 +15,7 @@ cleanup() {
 
 echo "Preparing"
 apk add --no-cache dropbear dropbear-dbclient
+mkdir .ssh
 dropbearkey -t ed25519 -f .ssh/id_dropbear
 dropbearkey -y -f ~/.ssh/id_dropbear | grep "^ssh-ed25519 " > .ssh/authorized_keys
 
