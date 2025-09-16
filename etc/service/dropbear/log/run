@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+trap 'echo "ERROR: $BASH_SOURCE:$LINENO $BASH_COMMAND" >&2' ERR
+
+exec chpst -u nobody:nogroup regex2json "^\\s*\\[(?P<pid___int>\\d+)\\] (?P<time___time__MonthDayTime>\\S+ \\d+ \\d+:\\d+:\\d+) (?P<msg>.+?)\\s*$"
