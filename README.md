@@ -13,9 +13,6 @@ Available as:
 
 ## Tags
 
-- `alpine-38`: dropbear 2018.76
-- `alpine-310`: dropbear 2019.78
-- `alpine-312`: dropbear 2019.78
 - `alpine-314`: dropbear 2020.81
 - `alpine-316`: dropbear 2022.82
 - `alpine-318`: dropbear 2022.83
