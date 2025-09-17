@@ -21,7 +21,7 @@ Available as:
 
 ## Volumes
 
-- `/etc/dropbear`: Volume with dropbear keys (keys are automatically generated the first time if not provided).
+- `/etc/dropbear`: Volume with dropbear keys.
 
 ## Variables
 
@@ -34,6 +34,8 @@ Available as:
 ## Description
 
 Docker image logs output to stdout. All stdout output is JSON.
+
+You can set `DROPBEAR_CONFIG` to `-R` to automatically generate host keys in `/etc/dropbear`.
 
 ## GitHub mirror
 
