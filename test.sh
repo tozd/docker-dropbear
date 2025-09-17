@@ -27,5 +27,5 @@ echo "Sleeping"
 sleep 10
 
 echo "Testing"
-dbclient -p 22 -y -T -N -i ssh/id_dropbear -I 5 nobody@docker
+dbclient -p 22 -y -T -N -i .ssh/id_dropbear -I 5 nobody@docker
 echo "Success"
