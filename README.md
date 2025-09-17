@@ -23,6 +23,10 @@ Available as:
 
 - `/etc/dropbear`: Volume with dropbear keys (keys are automatically generated the first time if not provided).
 
+## Variables
+
+- `DROPBEAR_CONFIG`: Additional CLI arguments to pass to dropbear.
+
 ## Ports
 
 - `22/tcp`: TCP port on which dropbear listens.
