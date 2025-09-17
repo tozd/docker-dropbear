@@ -21,7 +21,7 @@ dropbearkey -y -f .ssh/id_dropbear | grep "^ssh-ed25519 " > .ssh/authorized_keys
 echo "/sbin/nologin" > shells
 
 echo "Running Docker image"
-docker run -d --name test -p 22:22 -v "$(pwd)/.ssh:/.ssh" -v "$(pwd)/shells:/etc/shells" "${CI_REGISTRY_IMAGE}:${TAG}"
+docker run -d --name test -p 22:22 -v "$(pwd)/.ssh:/.ssh" -v "$(pwd)/shells:/etc/shells" -e "DROPBEAR_CONFIG=-R" "${CI_REGISTRY_IMAGE}:${TAG}"
 trap cleanup EXIT
 
 echo "Sleeping"
