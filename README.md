@@ -21,7 +21,7 @@ Available as:
 
 ## Volumes
 
-- `/etc/dropbear`: Volume with dropbear keys (they are automatically generated if not provided). You should put `authorized_keys` file in there, too.
+- `/etc/dropbear`: Volume with dropbear keys (keys are automatically generated the first time if not provided).
 
 ## Ports
 
